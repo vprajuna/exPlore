@@ -1,4 +1,62 @@
-{% extends "base.html" %} {% block title %}Home{% endblock %} 
-{% block content %} 
-<h1> This is the Home Page </h1>
-{% endblock %}
+<!-- {% extends "base.html" %} {% block title %}Home{% endblock %} 
+{% block content %}  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+	<title>My Webpage</title>
+</head>
+<body class="text-center bg-lightGreen dark:bg-[url('images/tile_background.png')] dark:bg-contain dark:text-white">
+    <header class="">
+        <img src="logo/xPlore_white.png" class="hidden dark:block mx-auto w-44 mt-6 mb-6">
+        <img src="logo/xPlore.png" class="block dark:hidden mx-auto w-44 mt-6 mb-6">
+    </header>
+
+    <main>
+        <script>
+            var imageId = 1;
+            
+            function changeImage(){
+                if(imageId > 2){
+                    imageId = 0;
+                }
+                imageId++;
+                document.getElementById("featureImage").src = "images/starbucks" + imageId + ".jpg";
+            }
+        </script>
+            
+        <div class="bg-white p-7 content-center mx-36 text-darkGreen">
+            <!-- content-center w-96 mx-32 mt-10 h-auto p-6 rounded-lg -->
+            <div class="">
+
+                <img class="rounded-lg" src="images/starbucks1.jpg" id="featureImage"> <!-- make it change images -->
+
+                <h2 class="text-4xl">Starbucks</h2>
+                <p class="text-sm">Coffee Shop</p>
+                <p class="text-xs">101 NW 136th Ave, Sunrise, FL 33325</p>
+
+            </div>
+
+            <br>
+        
+
+        </div>
+
+        <div class="p-3">
+            <button class="p-3 text-red bg-white" onclick="changeImage()">HATE</button>
+            <button class="p-3 text-lightGreen p-3 bg-white" onclick="changeImage()">LOVE</button>
+            
+        </div>
+
+
+    </main>
+
+    
+    <footer>
+
+        <!-- <button><a>Home</a></button> -->
+        <!-- <button><a>My Likes</a></button> -->
+        <!-- <p>&copy; 2023 My Webpage. All rights reserved.</p> -->
+    </footer>
+    
+<!-- {% endblock %} -->
