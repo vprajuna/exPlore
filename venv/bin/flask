@@ -1,4 +1,4 @@
-#!/Users/alexanderpetersen/Desktop/COP/exPlore/venv/bin/python
+#!/Users/alexanderpetersen/Desktop/COP/exPlore/venv/bin/python3.11
 # -*- coding: utf-8 -*-
 import re
 import sys
