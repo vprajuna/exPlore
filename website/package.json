@@ -1,0 +1,23 @@
+{
+  "name": "explore-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vprajuna/exPlore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vprajuna/exPlore/issues"
+  },
+  "homepage": "https://github.com/vprajuna/exPlore#readme",
+  "dependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}

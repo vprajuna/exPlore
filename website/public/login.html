@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body  class="text-center bg-green-300 dark:bg-[url('static/images/tile_background.png')] dark:bg-contain dark:text-white">
+	<header class="">
+    <img src="static/logo/xPlore_white.png" class="hidden dark:block mx-auto w-44 mt-6 mb-6">
+    <img src="static/logo/xPlore.png" class="block dark:hidden mx-auto w-44 mt-6 mb-6">
+  </header>
+
+  <main class="bg-white p-7 content-center mx-36 text-lime-900 rounded-lg">
+    <form method="POST">
+      <h3 class="text-center text-4xl">Login</h3>
+      <br>
+      <div class="">
+        <div class="form-group">
+          <label for="email">Email Address: </label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+          />
+        </div>
+      </div>
+      <br />
+      <button type="submit" class="btn btn-primary rounded-full bg-emerald-800 text-white p-2 px-4">Login</button>
+    </form>
+  </main>
+
+  
+  </body>
+</html>
