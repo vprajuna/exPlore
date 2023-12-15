@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+
+  <div class="bg-white p-7 content-center mx-36 text-darkGreen pt-5">
+      <!-- content-center w-96 mx-32 mt-10 h-auto p-6 rounded-lg -->
+      <div class="">
+
+          <h2 class="text-4xl"><%= @place.name %></h2>
+          <%= image_tag @image, class: "rounded-lg"%>
+          <!-- <img class="rounded-lg" src="{{ url_for('static', filename='images/starbucks1.jpg') }}" id="featureImage">  -->
+          <!-- make it change images -->
+
+          <h3 class="text-xs red_text"><%= @place.address %></h3>
+
+      </div>
+
+      <br>
+
+
+  </div>
+
+  <div class="p-3">
+    <%= @count %>
+    <%= link_to 'Hate', hate_place_path(@place), class: "btn bg-danger text-white"%>
+    <%= link_to 'Love', love_place_path(@place), class: "btn bg-success text-white"%> 
+    <%= link_to 'See Likes', places_path, class: "btn bg-success text-white"%> 
+      
+      
+  </div>
+
+</div>

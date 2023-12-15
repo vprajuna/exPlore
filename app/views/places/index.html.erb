@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+
+  <h1>Places</h1>
+
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @places.each do |place| %>
+        <tr>
+          <td class="mr-3"><%= place["name"] %></td>
+          <td class="ml-3"><%= place["address"] %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+</div>
